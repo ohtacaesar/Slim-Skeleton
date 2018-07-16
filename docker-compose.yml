@@ -1,0 +1,16 @@
+version: '3.6'
+
+volumes:
+  logs:
+    driver: local
+
+services:
+  slim:
+    build: .
+    environment:
+      docker: "true"
+    ports:
+      - 8080:8080
+    volumes:
+      - .:/app
+      - logs:/app/logs
