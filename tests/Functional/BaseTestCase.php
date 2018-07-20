@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Functional;
+namespace Tests\App\Functional;
 
 use PHPUnit\Framework\TestCase;
 use Slim\App;
